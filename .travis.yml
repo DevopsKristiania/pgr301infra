@@ -1,8 +1,12 @@
 language: java
 before_install:
-  - chmod +x build.sh
+- chmod +x build.sh
 install:
-  - mvn install -DskipTests=true -Dmaven.javadoc.skip=true -B -V
+- mvn install -DskipTests=true -Dmaven.javadoc.skip=true -B -V
 script:
-  - mvn test
-  - "./build.sh"
+- mvn test
+- "./build.sh"
+env:
+  global:
+  - secure: r/g3AjeP9TKbF8OpxPtwV6U22/21Eq/HuiSBCoTB0/57S2mwIZ/u6uGKuC10ctQWZDm0abC1K8GpPCs2hE7oMXa6olzyayhmLJcC+F2DVwRLPNLtcfe0TtoJkv9pFtkWUUqRLWaZw06uN0JNsizje0py9UWJAaZPam2IcV3ITlPS/7ndz4nW/NXkUANd10HsT1cvs+Q0TX9AQRz401kqQilrV7TwbrXY2KKJ6OfwFwWD1zjLnKDY0YTxY/XOfURcXgHouKBbpCP3GYgzOij+ArvZlb2htG+P4AW0g7e/iQzk5Bq7VfgkyIhpb1v3DztRYBPYbfm5hjDt+KqmNplg34sJjWf+813bFcMmWUA3kLL72Fds5++VIfQ2Fx6FOVMHyUge2bMAOioiSLEylJMpfA9DQnYQ/RbczFLU3SKDpRDh8R4I75/TSKkGGZVX38CwytwFjQuDt3xEHSHZbVXtzLITfc8wz4/W1AxKfolWdGQUmjV12tMHK/IiEVZY3nJIgPbBceqq+o/Znu4EUpKwLkYCiGUjrxOdSgo7kVFA91YIsSXgWylD7wiiulwEtlvn3V094Y8PdbY36t4KWecEMUTWUH3RNR2lxk2g84p86GcwITSIon6hM30ueUWtXvA0XOgEerMYubJGZjjbVAFCyT6Iec+p+pcScB+UWB/SncE=
+  - secure: GUSOiRqbsbJ2dh2xm/yNWeuM8IVsNhLoi9w+vwgh7z8ctt42TFRLjaErtcFkkN/NUa0KK8/IA8Qti07Q1Qx+MDgg1nXnX43yMPCA0a4+gXh9/bi9dIgBXVFkyfHzz3X3lt1CdXuABTEf3Dy4KQxwAnQFDQAt2X+MLQOdHXed7GE3kNb0uHzchw/Kn7EBu6L7zvLaGKSP7l5kdW06GUOKPu11+hINY73cOXoYOCprYwp7CcVzPebc4rvStH+wTWWx8PCGgnpW4YYrgvBsz9ZnkAwMg/aEhBlevjYkZ3Hh3yfe9GPNZ143CFGNDw6k+x68icATi05FWgd4dsugDUVXDP0/pqBNOgvpqLBr0sHJ09pZVOpqxz3O+4M1HSFw/KIh837ROlUWkVpgmVX3jRqqxq1ZivpVllS/yURTYmyu99VfgVPF2bscaS+wvx5zACqtDlWI/6m9EkP12OBUKQjXtQkz9DIjHSYibvoxxyJXUV2PVridUpV3hi1aR4D85pjM/QQxid7Wn0EO5BnhbWMUvYGX2JOxMRRu4/rHC4bWr+LiXexWEy+ljBZrZcP/fK3ff5MR6y+aawtAmuRHF0NKno4ExEqvIQkISkBhAWQ8s/eGPkYjXsSrPwRRpdBCV+gxnZ7GQA9W5AvaLcrxsxX156A9MgSsjdYsRbex4J/SZSU=
