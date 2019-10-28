@@ -23,9 +23,3 @@ variable "heroku-app-buildpacks" {
     "heroku/java"]
   type = "list"
 }
-/*
-# Addons.tf variables
-variable "heroku-develop-database" {
-  default = "heroku-postgresql:hobby-basic"
-}
-*/
