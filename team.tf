@@ -21,12 +21,12 @@ resource "opsgenie_team" "team" {
   description = " A description for this team."
 
   member {
-    id   = "1"
+    id   = "${opsgenie_user.first.id}"
     role = "admin"
   }
 
   member {
-    id   = "2"
+    id   = "${opsgenie_user.second.id}"
     role = "user"
   }
 }
