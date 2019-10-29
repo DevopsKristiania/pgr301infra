@@ -1,6 +1,6 @@
 # Users
 resource "opsgenie_user" "first" {
-  username  = "Firstuser@domain.com"
+  username  = "firstuser@domain.com"
   full_name = "First User"
   role      = "User"
   locale    = "no_NO"
@@ -8,7 +8,7 @@ resource "opsgenie_user" "first" {
 }
 
 resource "opsgenie_user" "second" {
-  username  = "Seconduser@domain.com"
+  username  = "seconduser@domain.com"
   full_name = "Second User "
   role      = "User"
   locale    = "no_NO"
