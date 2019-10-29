@@ -30,3 +30,4 @@ resource "opsgenie_team" "team" {
     role = "user"
   }
 }
+#
