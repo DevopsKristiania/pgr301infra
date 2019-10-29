@@ -1,4 +1,4 @@
-# these apps are also implemented with statuscake monitoring. See monitoring.tf
+# these apps are also implemented with statuscake monitoring. See monitor.tf
 resource "heroku_pipeline" "pipeline" {
   name = "${var.heroku-pipeline-name}"
 }
