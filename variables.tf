@@ -14,7 +14,6 @@ variable "heroku-staging-app" {
 variable "heroku-production-app" {
   default = "terraform-heroku-prod"
 }
-
 variable "heroku-region" {
   default = "eu"
 }
