@@ -18,7 +18,7 @@ resource "opsgenie_user" "second" {
 # Team
 resource "opsgenie_team" "team" {
   name        = "pgr301"
-  description = " A description for this team."
+  description = "pgr301 exam team"
 
   member {
     id   = "${opsgenie_user.first.id}"
@@ -30,4 +30,4 @@ resource "opsgenie_team" "team" {
     role = "user"
   }
 }
-##
+## schedule & rotation

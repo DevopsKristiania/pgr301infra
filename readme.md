@@ -23,6 +23,10 @@ Nedenfor er en liste med det som opprettes når du pusher "master branch" til de
   
   Man kan fritt deploye fra CI-miljø videre til Stage og produksjon  manuelt ved at man promoterer applikasjonen i Heroku UI (Eller CLI).
 
- -   overvåkning ved hjelp av SAAS tjenesten OpsGenie
+ -   overvåkning ved hjelp av SAAS tjenesten OpsGenie                        
+ 
+      team.tf
  -   overvåkning ved hjelp av SAAS tjenesten StatusCake
+ 
+     monitor.tf
  
