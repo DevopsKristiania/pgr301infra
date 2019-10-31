@@ -38,10 +38,3 @@ resource "opsgenie_schedule" "test" {
   timezone    = "Europe/Rome"
   enabled     = false
 }
-
-resource "opsgenie_schedule" "test" {
-  name          = "genieschedule-%s"
-  description   = "schedule test"
-  timezone      = "Europe/Rome"
-  enabled       = false
-}
