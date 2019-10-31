@@ -33,7 +33,7 @@ resource "opsgenie_team" "team" {
 
 # Schedule & Rotation
 resource "opsgenie_schedule" "test" {
-  name        = "genieschedule-%s"
+  name        = "genieschedule"
   description = "schedule test"
   timezone    = "Europe/Rome"
   enabled     = false
