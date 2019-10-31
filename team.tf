@@ -30,9 +30,8 @@ resource "opsgenie_team" "team" {
     role = "user"
   }
 }
-## schedule & rotation
+
+# Schedule & Rotation
 resource "opsgenie_schedule" "schedule" {
   name = "pgr301schedule"
-  description = "pgr301 schedule"
-  timezone = "Europe/Norway"
 }
