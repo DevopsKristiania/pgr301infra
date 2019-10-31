@@ -37,4 +37,5 @@ resource "opsgenie_schedule" "test" {
   description = "schedule test"
   timezone    = "Europe/Rome"
   enabled     = false
+  owner_team_id = "${opsgenie_team.team.id}"
 }
