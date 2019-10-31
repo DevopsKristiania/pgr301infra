@@ -50,4 +50,18 @@ resource "opsgenie_schedule_rotation" "rotation" {
     type = "user"
     id = "${opsgenie_user.first.id}"
   }
+  participant {
+    type = "user"
+    id = "${opsgenie_user.second.id}"
+  }
+  time_restriction {
+    type = "time-of-day"
+
+    restriction {
+      end_hour = 16
+      end_min = 0
+      start_hour = 8
+      start_min = 0
+    }
+  }
 }
