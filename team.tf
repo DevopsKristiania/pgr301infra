@@ -31,7 +31,7 @@ resource "opsgenie_team" "team" {
   }
 }
 
-# Schedule & Rotation
+# Schedule & Rotation 2019-06-18T17:45:00Z  2006-01-02T15:04:05Z
 resource "opsgenie_schedule" "schedule" {
   name        = "pgr301 schedule"
   description = "schedule for pgr301 exam team"
@@ -43,8 +43,8 @@ resource "opsgenie_schedule" "schedule" {
 resource "opsgenie_schedule_rotation" "rotation" {
   name = "pgr301 schedule rotation"
   schedule_id = "${opsgenie_schedule.schedule.id}"
-  start_date = "2019-10-31T00:00:00Z"
-  end_date = "2019-11-31T09:00:00Z"
+  start_date = "2019-10-31T15:30:00Z"
+  end_date = "2019-11-31T00:30:00Z"
   type = "weekly"
   participant {
     type = "user"
