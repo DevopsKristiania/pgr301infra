@@ -43,8 +43,8 @@ resource "opsgenie_schedule" "schedule" {
 resource "opsgenie_schedule_rotation" "rotation" {
   name = "pgr301 schedule rotation"
   schedule_id = "${opsgenie_schedule.schedule.id}"
-  start_date = "2006-01-02T15:00:00Z"
-  end_date = "2007-01-02T15:00:00Z"
+  start_date = "2019-10-31T15:00:00Z"
+  end_date = "2019-12-31T15:00:00Z"
   type = "weekly"
   participant {
     type = "user"
