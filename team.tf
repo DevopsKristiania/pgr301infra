@@ -31,3 +31,8 @@ resource "opsgenie_team" "team" {
   }
 }
 ## schedule & rotation
+resource "opsgenie_schedule" "schedule" {
+  name = "pgr301schedule"
+  description = "pgr301 schedule"
+  timezone = "Europe/Norway"
+}
