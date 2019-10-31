@@ -32,7 +32,7 @@ resource "opsgenie_team" "myteam" {
 }
 
 # Schedule & Rotation
-resource "opsgenie_schedule" "test" {
+resource "opsgenie_schedule" "schedule" {
   name        = "pgr301 schedule"
   description = "A schedule for pgr301 exam team"
   timezone    = "Europe/Norway"
