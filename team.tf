@@ -39,3 +39,15 @@ resource "opsgenie_schedule" "schedule" {
   enabled     = false
   owner_team_id = "${opsgenie_team.team.id}"
 }
+
+resource "opsgenie_schedule_rotation" "rotation" {
+  name = "pgr301 schedule rotation"
+  schedule_id = "${opsgenie_schedule.schedule.id}"
+  start_date = "2019-10-31T00:00:00Z"
+  end_date = "2019-11-31T09:00:00Z"
+  type = "weekly"
+  participant {
+    type = "user"
+    id = "${opsgenie_user.first.id}"
+  }
+}
