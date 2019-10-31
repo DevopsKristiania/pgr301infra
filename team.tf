@@ -32,6 +32,16 @@ resource "opsgenie_team" "team" {
 }
 
 # Schedule & Rotation
-resource "opsgenie_schedule" "schedule" {
-  name = "pgr301schedule"
+resource "opsgenie_schedule" "test" {
+  name        = "genieschedule-%s"
+  description = "schedule test"
+  timezone    = "Europe/Rome"
+  enabled     = false
+}
+
+resource "opsgenie_schedule" "test" {
+  name          = "genieschedule-%s"
+  description   = "schedule test"
+  timezone      = "Europe/Rome"
+  enabled       = false
 }
