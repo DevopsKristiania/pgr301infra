@@ -32,10 +32,10 @@ resource "opsgenie_team" "team" {
 }
 
 # Schedule & Rotation
-resource "opsgenie_schedule" "test" {
-  name        = "genieschedule"
-  description = "schedule test"
-  timezone    = "Europe/Rome"
+resource "opsgenie_schedule" "schedule" {
+  name        = "pgr301 schedule"
+  description = "schedule for pgr301 exam team"
+  timezone    = "Europe/Norway"
   enabled     = false
   owner_team_id = "${opsgenie_team.team.id}"
 }
