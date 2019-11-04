@@ -31,7 +31,7 @@ resource "opsgenie_team" "team" {
   }
 }
 
-# Schedule & Rotation 2019-06-18T17:45:00Z  2006-01-02T15:04:05Z
+# Schedule
 resource "opsgenie_schedule" "schedule" {
   name        = "pgr301 schedule"
   description = "schedule for pgr301 exam team"
@@ -40,6 +40,7 @@ resource "opsgenie_schedule" "schedule" {
   owner_team_id = "${opsgenie_team.team.id}"
 }
 
+# Schedule Rotation
 resource "opsgenie_schedule_rotation" "rotation" {
   name = "pgr301 schedule rotation"
   schedule_id = "${opsgenie_schedule.schedule.id}"
