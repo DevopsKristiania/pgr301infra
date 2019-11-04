@@ -1,4 +1,4 @@
-##PGR301_infra
+## PGR301_infra
 
 Denne repositorien tilsvarer infastruktur koden til eksamen i emnet PGR301_2019 DevOps i skyen.
 
